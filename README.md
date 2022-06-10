@@ -17,3 +17,12 @@ sqlite carga de datos
 '''
     sqlite3 clientes.sqlite < clientes.sql
 '''
+
+correr fastapi
+'''
+    uvicorn main:app --reload
+'''
+entrar en una base de datos sqlite
+'''
+    sqlite3 base_de_datos.db/sql/sqlite
+'''
