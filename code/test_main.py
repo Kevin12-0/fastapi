@@ -7,3 +7,4 @@ def test_index():
     response = clientes.get('/')
     assert response.status_code ==200
     assert response.json()  == {'message':36.81}
+
