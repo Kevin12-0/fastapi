@@ -1,0 +1,8 @@
+FROM ubuntu:20.04
+RUN apt update -y
+RUN apt upgrade -y
+RUN apt install -y python3
+RUN apt install -y python3-pip
+RUN apt install sqlite3 -y
+RUN pip install db-sqlite3
+WORKDIR /home/
