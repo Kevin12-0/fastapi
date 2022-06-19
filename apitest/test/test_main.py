@@ -10,7 +10,7 @@ def test_index():
 	assert response.json()==data
 
 def test_consulta():
-	response = clientes.get('/consulta/')
+	response = clientes.get('/consulta/2?short=1')
 	data = {"id_cliente":2,"nombre":"John","email":"john@gmail.com"}
 	assert response.status_code == 200
 	assert response.json()==data
