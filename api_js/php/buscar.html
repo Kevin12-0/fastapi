@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <title>Buscar Cliente</title>
+</head>
+<body>
+    <div class="container">
+        <div class="colums">
+            <div class="colums is-4">
+                <h1 class="title">Buscar Cliente</h1>
+                <form method="get">
+                    <div class="control">
+                        <label class="label">ID</label>
+                        <input id="id_cliente" class="input" value="1">
+                        <input type="submit" value="Buscar" class="button is-primary">
+                    </div>
+                    <script type="text/javascript" src="buscar_cliente.js"></script>
+                </form>
+                <a href="index.html"><button class="button is-primary">Index</button></a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody id="datos">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
